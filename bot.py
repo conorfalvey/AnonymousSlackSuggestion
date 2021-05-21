@@ -43,7 +43,7 @@ def anonSuggest():
     # and matches on the username.
     recipient = retrieve_recipient()
     if not recipient:
-        return Response, 500
+        return Response(), 500
 
     # send_suggestion appends a message prefix defined in the
     # .env file. They're just concatenated.
