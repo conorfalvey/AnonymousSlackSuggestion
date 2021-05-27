@@ -49,7 +49,7 @@ BOT_ID = slackClient.api_call("auth.test")["user_id"]
 @app.route("/matt", methods=["POST"])
 def anonSuggest():
     """ Recieve POST requests from Slack API
-    served by the `/suggest` command."""
+    served by the `/matt` command."""
     data = request.form
     text = data.get("text")
 
